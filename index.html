@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora</h1>
+        <div class="visor">
+            <input type="text" value="" id="visor">
+        </div>
+
+        <div id="botões">
+            <button type="submit" value="7" onclick="unir(value)">7</button>
+            <button type="submit" value="8" onclick="unir(value)">8</button>
+            <button type="submit" value="9" onclick="unir(value)">9</button>
+            <button type="submit" value="4" onclick="unir(value)">4</button>
+            <button type="submit" value="5" onclick="unir(value)">5</button>
+            <button type="submit" value="6" onclick="unir(value)">6</button>
+            <button type="submit" value="+" onclick="unir(value)" id="mais">+</button>
+            <button type="submit" value="1" onclick="unir(value)">1</button>
+            <button type="submit" value="2" onclick="unir(value)">2</button>
+            <button type="submit" value="3" onclick="unir(value)">3</button>
+            <button type="submit" value="-" onclick="unir(value)">-</button>
+            <button type="submit" value="." onclick="unir(value)">.</button>
+            <button type="submit" value="0" onclick="unir(value)">0</button>
+            <button type="submit" value="/" onclick="unir(value)">/</button>
+            <button type="submit" value="*" onclick="unir(value)">*</button>
+            <button type="submit" value="RESET" onclick="limpar()" id="RESET">RESET</button>
+            <button type="submit" value="=" onclick="calc()" id="IGUAL">=</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

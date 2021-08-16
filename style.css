@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
+
+
+body{
+    background-color: rgb(23, 44, 61);
+    font-family: 'Kanit',Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 40vw;
+    height: 70vh;
+    margin-top: 15vh;
+    margin-left: 30vw;
+}
+.container h1{
+    color: white;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    margin-left: 10px;
+}
+#visor{
+    width: 93%;
+    height: 10vh;
+    padding-right: 3%;
+    background-color: rgb(70, 80, 90);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: end;
+    color: white;
+}
+#botões{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 40px 40px 40px 40px;
+    grid-gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(70, 80, 90);
+    padding: 20px;
+}
+#botões button{
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 8px;
+}
+#botões button:hover{
+    border: #1c1c1c 1px solid;
+    font-size: 15px;
+    font-weight: bold;
+}
+#RESET{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: slategray;
+}
+#IGUAL{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: rgb(248, 26, 26);
+}
+#DEL{
+    background-color: slategray;
+}
+#mais{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    background-color: slategray;
+}
+
+@media(max-width:768px){
+    .container{
+        width: 80vw;
+        margin-left: 10vw;
+    }
+    #visor{
+        width: 93.5%;
+    }
+}
+@media(max-width:425px){
+    #visor{
+        width: 91%;
+    }
+}
+@media(max-width:375px){
+    #visor{
+        width: 90%;
+    }
+}
